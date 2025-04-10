@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),url("Assests/HeroSectionBg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),url("../w2119979/Assests/HeroSectionBg.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
