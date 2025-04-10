@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Save Marine Life</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/volunteer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fd1891ff8.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/navbar.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"> 
+            <img src="../w2119985/Assests/Logo/Circle2.png" alt="Save Marine Life"> 
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="../w2119985/Assests/Icons/menu.svg" alt="burger icon" id="menu-icon">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <a href="profile.html"><img src="../w2119985/Assests/images/profileimage.jpg" alt="User Profile"></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="overlay">
+            <h1>Let's <span>Save The Oceans</span> Together</h1>
+        </div>
+    </div>
+     
+    <!-- Volunteer Events Section -->
+    <section class="events">
+        <h2>Volunteer <span>Events</span></h2>
+        <div class="event-grid">
+            <div class="event-card" style="background-image: url('../w2119985/Assests/images/beach\ image.jpg');">
+                <h3 class="event-title">Beach Cleanup Drive</h3>
+                <div class="event-info">
+                    <p class="event-description">Join us in cleaning the beach and protecting marine life.</p>
+                    <p class="event-date">Date: March 10, 2025</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+    
+            <div class="event-card" style="background-image: url('../w2119985/Assests/images/Coral\ Reef\ Restoration.jpg');">
+                <h3 class="event-title">Coral Reef Restoration</h3>
+                <div class="event-info">
+                    <p class="event-description">Help rebuild coral reefs and support marine biodiversity.</p>
+                    <p class="event-date">Date: March 15, 2025</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+    
+            <div class="event-card" style="background-image: url('../w2119985/Assests/images/Plastic\ Awareness\ Campaign.jpg');">
+                <h3 class="event-title">Plastic Awareness Campaign</h3>
+                <div class="event-info">
+                    <p class="event-description">Spread awareness about ocean plastic pollution.</p>
+                    <p class="event-date">Date: March 20, 2025</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+    
+            <div class="event-card" style="background-image: url('../w2119985/Assests/images/Underwater\ Cleanup\ Dive.jpg');">
+                <h3 class="event-title">Underwater Cleanup Dive</h3>
+                <div class="event-info">
+                    <p class="event-description">Join divers in removing debris from the ocean.</p>
+                    <p class="event-date">Date: March 25, 2025</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+    
+            <div class="event-card" style="background-image: url('../w2119985/Assests/images/Wildlife\ Rescue\ Training.jpg');">
+                <h3 class="event-title">Wildlife Rescue Training</h3>
+                <div class="event-info">
+                    <p class="event-description">Learn how to rescue and rehabilitate marine animals.</p>
+                    <p class="event-date">Date: March 30, 2025</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+    
+            <div class="event-card" style="background-image: url('../w2119985/Assests/images/Ocean\ Conservation\ Workshop.jpg');">
+                <h3 class="event-title">Ocean Conservation Workshop</h3>
+                <div class="event-info">
+                    <p class="event-description">Participate in educational workshops about ocean health.</p>
+                    <p class="event-date">Date: April 5, 2025</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="reviews">
+        <div class="review-container">
+            <!-- Left Side: Rating Summary -->
+            <div class="rating-summary">
+                <p class="average-summary">9/10</p>
+                <p>Excellent</p>
+                <p>200 reviews</p>
+            </div>
+            
+            <!-- Right Side: Reviews -->
+            <div class="review-list">
+                <div class="review-card">
+                    <div class="review-header">
+                        <h3>John Wick</h3>
+                        <p class="rating">9/10 Excellent</p>
+                    </div>
+                    <p>Walking along the shore, I was shocked by the amount of plastic waste scattered across the sand...</p>
+                    <a href="#">See More »</a>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <h3>Roronoa Zoro</h3>
+                        <p class="rating">9/10 Excellent</p>
+                    </div>
+                    <p>Diving beneath the waves, I saw the beauty of coral reefs up close—but also the damage they’ve suffered...</p>
+                    <a href="#">See More »</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rating System -->
+    <section class="rating-container">
+        <h2>Send us your review</h2>
+        <div class="rating-form">
+            <h3>Your Rating:</h3>
+            <div class="rating-options">
+                <input type="radio" id="rate1" name="rating" value="1"><label for="rate1">1</label>
+                <input type="radio" id="rate2" name="rating" value="2"><label for="rate2">2</label>
+                <input type="radio" id="rate3" name="rating" value="3"><label for="rate3">3</label>
+                <input type="radio" id="rate4" name="rating" value="4"><label for="rate4">4</label>
+                <input type="radio" id="rate5" name="rating" value="5"><label for="rate5">5</label>
+                <input type="radio" id="rate6" name="rating" value="6"><label for="rate6">6</label>
+                <input type="radio" id="rate7" name="rating" value="7"><label for="rate7">7</label>
+                <input type="radio" id="rate8" name="rating" value="8"><label for="rate8">8</label>
+                <input type="radio" id="rate9" name="rating" value="9"><label for="rate9">9</label>
+                <input type="radio" id="rate10" name="rating" value="10"><label for="rate10">10</label>
+            </div>
+            <input type="text" placeholder="Your Name (Optional)" class="name-input">
+            <textarea placeholder="Write your review here (Optional)" class="review-textarea"></textarea>
+            <div class="review-buttons">
+                <button class="submit-btn">Submit</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h2> Together, we make a <br>difference in saving our ocean!</h2>
+                </div>
+                <div class="cta-btn-section">
+                        <button class="cta-btn" onclick="location.href = 'volunteer.html';">Join Us!</button>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="footer-info">
+                <div class="team-container">
+                    <img src="../w2119985/Assests/Logo/Square2.png" alt="team logo square">
+                    <!-- <div class="team-info"> -->
+                        <!-- <h3>Save</h3> <br> <h3>Marine</h3>  <br> <h3>Life</h3> </h3> -->
+                    <!-- </div> -->
+                </div>
+                <div class="links">
+                    <div class="navigation-links">
+                        <h3>Navigation</h3>
+                        <a href="home.html" class="footer-links"><p>Home</p> </a>
+                        <a href="volunteer.html" class="footer-links"><p>volunteer</p> </a>
+                        <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                        <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                        <a href="team.html" class="footer-links"><p>Team</p> </a>
+                        <a href="table.html" class="footer-links"><p>Table</p> </a>
+                    </div>
+                    <div class="explore-links">
+                        <h3>Explore</h3>
+                        <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                        <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                        <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                        <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon facebook">
+                    <img src="../w2119985/Assests/Icons/fbDefault.png" alt="Facebook" class="default">
+                    <img src="../w2119985/Assests/Icons/fbActive.png" alt="Facebook" class="hover">
+                </a>
+                <a href="https://x.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon x">
+                    <img src="../w2119985/Assests/Icons/XDefault.png" alt="X" class="default">
+                    <img src="../w2119985/Assests/Icons/XActive.png" alt="X" class="hover">
+                </a>
+                <a href="https://www.youtube.com/user/uncsd2012/featured" target="_blank" rel="noopener noreferrer" class="icon youtube">
+                    <img src="../w2119985/Assests/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                    <img src="../w2119985/Assests/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                </a>
+                <a href="https://www.flickr.com/photos/sustdev/" target="_blank" rel="noopener noreferrer" class="icon flickr">
+                    <img src="../w2119985/Assests/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                    <img src="../w2119985/Assests/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                </a>
+            </div>
+                <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Janul Sheran Samaranayake</title>
+
+    <link rel="stylesheet" href="../CSS/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script defer src="../JS/navbar.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> 
+            <img src="../w2119985/Assests/Logo/Circle2.png" alt="Save Marine Life"> 
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="../w2119985/Assests/Icons/menu.svg" alt="burger icon" id="menu-icon">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <a href="profile.html"><img src="../w2119985/Assests/images/profileimage.jpg" alt="User Profile"></a>
+        </div>
+    </nav>
+
+    <section class="stud">
+        <h2>Janul Samaranayake, Student 1</h2>
+    </section>
+
+    <div class="val-container">
+        <!-- Main content area -->
+        <main>
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+
+<h3>Technical Description</h3>
+<p>
+    The splash page is designed with a full-screen video background, achieved using the 
+    <code>&lt;video&gt;</code> tag inside a <code>&lt;div&gt;</code> with <code>position: fixed</code> 
+    to ensure it covers the entire screen. The splash content is centrally aligned using 
+    <code>display: flex</code>, <code>justify-content: center</code>, and <code>align-items: center</code>.
+</p>
+
+<h4>Key HTML Elements</h4>
+<ul>
+    <li><code>&lt;video&gt;</code>: Plays a background video with <code>autoplay</code> and <code>muted</code> attributes for smooth display.</li>
+    <li><code>&lt;div class="splash-screen"&gt;</code>: The container holding the splash content.</li>
+    <li><code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>: Used for branding and mission statements.</li>
+</ul>
+
+<h4>Key CSS Properties</h4>
+<ul>
+    <li><code>object-fit: cover</code>: Ensures the video fills the background properly.</li>
+    <li><code>filter: brightness(70%)</code>: Applies a dark overlay for better readability.</li>
+    <li><code>animation: waveBackground 6s infinite alternate ease-in-out</code>: Creates a subtle scaling effect.</li>
+    <li><code>.loading-icon</code>: A CSS-animated spinner to indicate loading.</li>
+</ul>
+
+<h3>Accessibility</h3>
+<p>
+    The splash screen was designed with accessibility in mind to ensure usability for all users, including those with disabilities.
+</p>
+
+<h4>Color Contrast & Readability</h4>
+<p>The text is displayed in white against a dark background to provide high contrast, improving readability for users with visual impairments. 
+    A semi-transparent overlay (<code>filter: brightness(70%)</code>) further enhances the contrast between the text and background video.
+</p>
+
+<h4>Alternative Text for Images</h4>
+<p>
+    The logo image includes an <code>alt="Marine Logo"</code> attribute, ensuring that screen readers can describe the image to visually impaired users.
+</p>
+
+<h4>Keyboard Navigation & Focus Management</h4>
+<p>
+    The splash screen does not contain interactive elements, preventing unnecessary focus trapping. Future enhancements may include a 
+    "Skip to Main Content" link for improved navigation.
+</p>
+
+<h4>Motion Reduction Considerations</h4>
+<p>
+    Animations such as the wave effect and loading spinner are smooth and slow, reducing motion sickness risks. 
+    The design respects the <code>prefers-reduced-motion</code> setting, allowing users to disable animations if needed.
+</p>
+
+<h4>Screen Reader Compatibility</h4>
+<p>
+    The page structure uses semantic HTML elements like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;div&gt;</code> 
+    to improve screen reader interpretation.
+</p>
+
+<h4>Time-Based Navigation Considerations</h4>
+<p>
+    The splash screen redirects after 6 seconds using <code>&lt;meta http-equiv="refresh" content="6;url=home.html"&gt;</code>, 
+    which may be problematic for users needing more time. Future improvements could include an option to skip the splash screen manually.
+</p>
+
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html">Validation Page for Splash-Screen</a> 
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html">Splash-Screen</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+            
+                <h3>Technical Description</h3>
+                <p>
+                    The Volunteer page is structured using <b>semantic HTML elements</b> and utilizes <b>CSS Grid and Flexbox</b> for responsive design. 
+                    The page includes a <b>hero section, event listings, and a review section</b>.
+                </p>
+            
+                <h4>Key HTML Elements</h4>
+                <ul>
+                    <li><code>&lt;div class="hero"&gt;</code>: Contains a background image with a semi-transparent overlay for improved readability.</li>
+                    <li><code>&lt;div class="event-grid"&gt;</code>: Uses CSS Grid to structure volunteer events into a visually appealing layout.</li>
+                    <li><code>&lt;section class="reviews"&gt;</code>: Displays user reviews with a <b>rating system</b>.</li>
+                </ul>
+            
+                <h4>Key CSS Properties</h4>
+                <ul>
+                    <li><code>background: url(...)</code>: Sets a <b>full-width background image</b> in the hero section.</li>
+                    <li><code>grid-template-columns: repeat(3, 1fr)</code>: Organizes the <b>event cards</b> into a responsive three-column layout.</li>
+                    <li><code>.event-card:hover { transform: scale(1.05); }</code>: Adds a <b>hover effect</b> for an interactive experience.</li>
+                    <li><code>.rating-summary</code>: Uses <b>box-shadow and border-radius</b> to create a clean review section layout.</li>
+                </ul>
+            
+                <h3>Accessibility</h3>
+                <p>
+                    The Volunteer page was designed with accessibility considerations to ensure usability for all users.
+                </p>
+            
+                <h4>Color Contrast & Readability</h4>
+                <p>
+                    The <b>hero section</b> uses a <b>dark overlay</b> on the background image, ensuring that text remains readable against various backgrounds.
+                </p>
+            
+                <h4>Alternative Text for Images</h4>
+                <p>
+                    The <b>logo</b> and <b>event images</b> include descriptive <code>alt</code> attributes to help screen reader users understand the content.
+                </p>
+            
+                <h4>Keyboard Navigation & Focus Management</h4>
+                <p>
+                    All interactive elements, such as buttons and links, are <b>keyboard-navigable</b> with visible focus indicators.  
+                    The <b>rating system and event sign-up buttons</b> are accessible via the keyboard.
+                </p>
+            
+                <h4>Motion Reduction Considerations</h4>
+                <p>
+                    Hover animations and transitions are smooth and respect the <b>prefers-reduced-motion</b> media query, allowing users to disable animations if needed.
+                </p>
+            
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST1.html#volunteerVal">Validation Page for Volunteer</a>
+                </p>
+            
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="volunteer.html">Volunteer Page</a>
+                </p>
+            </section>
+            
+            <section>
+                <h2 id="content">Content Page</h2>
+            
+                <h3>Technical Description</h3>
+                <p>
+                    The Content Page presents an <b>informational blog</b> about sustainable fishing, designed for <b>readability and responsiveness</b>. 
+                    It is styled using a <b>global CSS file (`styles.css`)</b> along with a <b>dedicated stylesheet (`ContentStyles.css`)</b>.
+                </p>
+            
+                <h4>Key HTML Elements</h4>
+                <ul>
+                    <li><code>&lt;article class="blog-content"&gt;</code>: Wraps the main blog content for better <b>semantic structure</b>.</li>
+                    <li><code>&lt;div class="blog-container"&gt;</code>: Holds the blog content and sidebar elements.</li>
+                    <li><code>&lt;aside class="table-of-contents"&gt;</code>: Provides a navigational table of contents for quick access to sections.</li>
+                    <li><code>&lt;button id="toc-toggle"&gt;</code>: Allows toggling of the table of contents.</li>
+                </ul>
+            
+                <h4>Key CSS Properties</h4>
+                <ul>
+                    <li><code>display: flex</code>: Used in the <b>layout</b> to position content and sidebar sections responsively.</li>
+                    <li><code>background: url(...)</code>: Adds <b>hero images</b> to blog sections for better <b>visual impact</b>.</li>
+                    <li><code>.blog-title</code>: Uses <b>larger fonts and margins</b> to enhance readability.</li>
+                    <li><code>.table-of-contents</code>: Uses <b>positioning and smooth scrolling</b> to improve navigation.</li>
+                </ul>
+            
+                <h3>Accessibility</h3>
+                <p>
+                    The Content Page follows accessibility best practices to ensure a <b>user-friendly experience</b> for all.
+                </p>
+            
+                <h4>Color Contrast & Readability</h4>
+                <p>
+                    Text is displayed with high contrast over <b>background images</b>, ensuring easy readability.
+                </p>
+            
+                <h4>Alternative Text for Images</h4>
+                <p>
+                    All images (author profile, blog images, and icons) contain <b>meaningful `<alt>` attributes</b> to assist screen reader users.
+                </p>
+            
+                <h4>Keyboard Navigation & Focus Management</h4>
+                <p>
+                    The <b>table of contents links, navigation bar, and footer links</b> are fully keyboard-accessible.
+                </p>
+            
+                <h4>Responsive & Scalable Design</h4>
+                <p>
+                    The blog layout uses <b>flexible grid structures</b>, ensuring it adapts well on different screen sizes.
+                </p>
+            
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST1.html#contentVal">Validation Page for Content</a>
+                </p>
+            
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="ContentPage_ST1.html">Content Page</a>
+                </p>
+            </section>                        
+
+            <section>
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                <p>
+                    During the implementation process, several challenges were encountered and addressed. Below are the key difficulties and how they were resolved:
+                </p>
+            
+                <h4>1. Responsive Design Issues</h4>
+                <p>
+                    Ensuring the layout adapted correctly across different screen sizes was a challenge.  
+                    <b>Solution:</b> Used <b>CSS Flexbox and Grid</b>, and tested the site using <b>media queries</b> to optimize responsiveness.
+                </p>
+            
+                <h4>2. Video Background Performance</h4>
+                <p>
+                    The splash page’s video background caused slow load times on lower-end devices.  
+                    <b>Solution:</b> Compressed the video, used a <b>fallback image</b>, and applied <b>lazy loading techniques</b>.
+                </p>
+            
+                <h4>3. Cross-Browser Compatibility</h4>
+                <p>
+                    Some animations and layout styles appeared differently in different browsers.  
+                    <b>Solution:</b> Used <b>CSS prefixes</b> and tested with <b>Chrome, Firefox, Edge, and Safari</b>.
+                </p>
+            
+                <h4>Lessons Learned</h4>
+                <p>
+                    - The importance of <b>structured debugging</b> and <b>cross-browser testing</b>.  
+                    - How to optimize performance while maintaining a visually appealing design.  
+                    - <b>Accessibility considerations</b> should be prioritized from the start.
+                </p>
+            </section>
+            
+            
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                <p>
+                    The pages adhere to <b>Janet regulations</b> governing web page publication, ensuring compliance in the following areas:
+                </p>
+            
+                <h4>1. Accessibility Standards</h4>
+                <p>
+                    The site follows <b>Janet regulations</b>, including <b>alt text for images, keyboard navigation, and sufficient color contrast</b>.
+                </p>
+            
+                <h4>2. Data Protection & Privacy</h4>
+                <p>
+                    No user-sensitive data is stored, and <b>HTTPS encryption</b> is implemented for secure communication.
+                </p>
+            
+                <h4>3. Copyright & Content Usage</h4>
+                <p>
+                    Images and content used follow proper <b>licensing and attribution</b>, avoiding copyright infringement.
+                </p>
+            
+                <h4>4. Performance Optimization</h4>
+                <p>
+                    The site uses <b>compressed assets, lazy loading, and caching</b> to ensure fast loading times.
+                </p>
+            </section>
+            
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Below are the resources used, formatted consistently:</p>
+                <ul class="ref">
+                    <li>iStock (2025). <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                    <li>Duckett, J. (2011). <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons, Inc.</li>
+                    <li>MDN Web Docs (2025). <i>Mozilla Developer Network.</i> Available at: <a href="https://developer.mozilla.org/">https://developer.mozilla.org/</a></li>
+                    <li>W3C (2025). <i>Web Content Accessibility Guidelines (WCAG) 2.1.</i> Available at: <a href="https://www.w3.org/WAI/WCAG21/">https://www.w3.org/WAI/WCAG21/</a></li>
+                </ul>
+            </section>
+            
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="pageEditor_ST1.html#splash">Splash page</a></li>
+                        <li><a href="pageEditor_ST1.html#volunteer">Volunteer page</a></li>
+                        <li><a href="pageEditor_ST1.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="pageEditor_ST2.html#home">Home page </a></li>
+                        <li><a href="pageEditor_ST2.html#table">Table page</a></li>
+                        <li><a href="pageEditor_ST2.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="pageEditor_ST3.html#feedbackPage">Feedback page</a> </li>
+                        <li><a href="pageEditor_ST3.html#teamPage">Team page</a></li>
+                        <li><a href="pageEditor.html#contentPage">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h2> Together, we make a <br>difference in saving our ocean!</h2>
+                </div>
+                <div class="cta-btn-section">
+                        <button class="cta-btn" onclick="location.href = 'volunteer.html';">Join Us!</button>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="footer-info">
+                <div class="team-container">
+                    <img src="../w2119985/Assests/Logo/Square2.png" alt="team logo square">
+                    <!-- <div class="team-info"> -->
+                        <!-- <h3>Save</h3> <br> <h3>Marine</h3>  <br> <h3>Life</h3> </h3> -->
+                    <!-- </div> -->
+                </div>
+                <div class="links">
+                    <div class="navigation-links">
+                        <h3>Navigation</h3>
+                        <a href="home.html" class="footer-links"><p>Home</p> </a>
+                        <a href="volunteer.html" class="footer-links"><p>Volunteer</p></a>
+                        <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                        <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                        <a href="team.html" class="footer-links"><p>Team</p> </a>
+                        <a href="table.html" class="footer-links"><p>Table</p> </a>
+
+                    </div>
+                    <div class="explore-links">
+                        <h3>Explore</h3>
+                        <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                        <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                        <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                        <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon facebook">
+                        <img src="../w2119985/Assests/Icons/fbDefault.png" alt="Facebook" class="default">
+                        <img src="../w2119985/Assests/Icons/fbActive.png" alt="Facebook" class="hover">
+                    </a>
+                    <a href="https://x.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon x">
+                        <img src="../w2119985/Assests/Icons/XDefault.png" alt="X" class="default">
+                        <img src="../w2119985/Assests/Icons/XActive.png" alt="X" class="hover">
+                    </a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" target="_blank" rel="noopener noreferrer" class="icon youtube">
+                        <img src="../w2119985/Assests/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                        <img src="../w2119985/Assests/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                    </a>
+                    <a href="https://www.flickr.com/photos/sustdev/" target="_blank" rel="noopener noreferrer" class="icon flickr">
+                        <img src="../w2119985/Assests/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                        <img src="../w2119985/Assests/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
