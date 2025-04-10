@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 3 - S. Dehansa Dissanayake</title>
+    <link rel="icon" type="image/x-icon" href="Assests/Logo/Circle.ico">
+    <link rel="stylesheet" href="pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="navbar.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> 
+            <img src="Assests/Logo/Circle2.png" alt="Save Marine Life"> 
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="Assests/Icons/menu.svg" alt="burger icon" id="menu-icon">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#">Table</a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="Assests/images/profileimage.jpg" alt="User Profile">
+        </div>
+    </nav>
+
+    <section class="stud">
+        <h2>S. Dehansa Dissanayake, Student 3</h2>
+    </section>
+    <div class="val-container">
+        <!-- Main content area -->
+        <main>
+
+            <section>
+                <h2 id="feedbackPage">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+
+                    <ul>
+                        <li><strong>HTML:</strong>
+                            <ul>
+                                <li>Used <code>&lt;form&gt;</code> for structured user input.</li>
+                                <li>Applied <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to group related form controls for improved structure.</li>
+                                <li>Integrated <code>&lt;button type="submit"&gt;</code> and <code>&lt;button type="reset"&gt;</code> for user actions.</li>
+                                <li>Used <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> to provide dropdown selections.</li>
+                                <li>Applied <code>required</code> attribute to essential fields: text input, email, and tel.</li>
+                                <li>Ensured the form does not submit unless all required fields are completed.</li>
+                                <li>Utilized <code>&lt;input type="text"&gt;</code>, <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="<span class="highlight">tel</span>"&gt;</code>,
+                                    <code>&lt;input type="radio"&gt;</code>, <code>&lt;input type="checkbox"&gt;</code>, <code>&lt;input type="file"&gt;</code>,
+                                    <code>&lt;input type="datetime-local"&gt;</code>.
+                                </li>
+                                <li>Ensured an intuitive and accessible feedback submission experience.</li>
+                                <li>Allowed users to upload attachments and specify submission times.</li>
+                                <li>Organized inputs using proper HTML structures to enhance usability.</li>
+                                <li>Provided real-time feedback to users on incorrect inputs.</li>
+                            </ul>
+                        </li><br>
+                
+                        <li><strong>CSS:</strong>
+                            <ul>
+                                <li>Styled form elements using <code>display: flex</code>, margin, padding, and gap for spacing.</li>
+                                <li>Used <code>:hover</code> pseudo-classes for better user experience.</li>
+                                <li>Applied <code>border: 2px solid red</code> for invalid fields and displayed error messages.</li>
+                                <li>Ensured form responsiveness using @media queries</a>.</li>
+                                <li>Applied border, border-radius, and box-shadow for better visual appeal.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li><strong>Semantic HTML:</strong> Proper use of <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> for better screen reader navigation.</li>
+                        <li><strong>Alternative Text:</strong> Profile images include meaningful <code>alt</code> attributes to describe team members.</li>
+                        <li><strong>Keyboard Navigation:</strong> Ensure all interactive elements (like team member links) are accessible via Tab key.</li>
+                        <li><strong>Color Contrast:</strong> Background and text contrast meets WCAG standards for readability.</li>
+                        <li><strong>ARIA Labels:</strong> Used for team roles to help screen readers announce job titles effectively.</li>
+                    </ul>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST3.html">Validation page</a></p>
+
+                    <h3>Link to the Feedback page</h3>
+                        <p><a href="feedback.html">Feedback Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="teamPage">Team Page</h2>
+                    <h3>Technical Description</h3>
+                    <ul>
+                        <li><strong>HTML:</strong>
+                            <ul>
+                                <li><strong>Form Labels & Inputs:</strong> Every form field has a <code>&lt;label&gt;</code> for screen reader compatibility.</li>
+                                <li><strong>Error Messages:</strong> Clear, accessible validation messages for incorrect inputs.</li>
+                                <li><strong>Keyboard Accessibility:</strong> The form can be navigated using only the keyboard (Tab, Enter).</li>
+                                <li><strong>Focus Indicators:</strong> Clear focus styling for all input fields.</li>
+                                <li><strong>Accessible Submit Button:</strong> Includes ARIA attributes for proper screen reader interpretation.</li>
+                            </ul>
+                        </li><br>
+
+                        <li><strong>CSS:</strong>
+                            <ul>
+                                <li><strong>Flexbox & Grid Layout:</strong>
+                                    <ul>
+                                        <li>Used <code>display: flex</code> for navigation and footer.</li>
+                                        <li>Used <code>grid-template-columns</code> for organizing content in sections.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Typography & Readability:</strong>
+                                    <ul>
+                                        <li>Font styles set for readability (<code>font-size</code>, <code>line-height</code>).</li>
+                                        <li>Different heading levels (<code>h1-h3</code>) for hierarchy.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Navigation & Responsive Design:</strong>
+                                    <ul>
+                                        <li>Implemented a mobile-friendly navigation toggle (<code>menu-icon</code>).</li>
+                                        <li>Used <code>@media queries</code> to adjust the layout for different screen sizes.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Hover Effects & Interactive Elements:</strong>
+                                    <ul>
+                                        <li><code>:hover</code> and <code>:focus</code> pseudo-classes used for buttons and links.</li>
+                                        <li>Icons change on hover for visual feedback.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br>
+                    </ul>
+                    
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li><strong>Semantic HTML:</strong> Proper use of <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> for better screen reader navigation.</li>
+                        <li><strong>Alternative Text:</strong> Profile images include meaningful <code>alt</code> attributes to describe team members.</li>
+                        <li><strong>Keyboard Navigation:</strong> Ensure all interactive elements (like team member links) are accessible via Tab key.</li>
+                        <li><strong>Color Contrast:</strong> Background and text contrast meets WCAG standards for readability.</li>
+                        <li><strong>ARIA Labels:</strong> Used for team roles to help screen readers announce job titles effectively.</li>
+                    </ul>
+                    
+                    <h3>Link to the validation page</h3>
+                    <p><a href="validation_ST3.html">Validation page</a></p>
+
+                    <h3>Link to the Team page</h3>
+                        <p><a href="team.html">Team Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="contentPage">Content Page</h2>
+                    <h3>Technical Description</h3>
+
+                    <ul>
+                        <li><strong>HTML:</strong>
+                            <ul>
+                                <li>Used <code>&lt;form&gt;</code> for structured user input.</li>
+                                <li>Applied <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to group related form controls for improved structure.</li>
+                                <li>Integrated <code>&lt;button type="submit"&gt;</code> and <code>&lt;button type="reset"&gt;</code> for user actions.</li>
+                                <li>Used <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> to provide dropdown selections.</li>
+                                <li>Applied <code>required</code> attribute to essential fields: text input, email, and tel.</li>
+                                <li>Ensured the form does not submit unless all required fields are completed.</li>
+                                <li>Utilized <code>&lt;input type="text"&gt;</code>, <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="<span class="highlight">tel</span>"&gt;</code>,
+                                    <code>&lt;input type="radio"&gt;</code>, <code>&lt;input type="checkbox"&gt;</code>, <code>&lt;input type="file"&gt;</code>,
+                                    <code>&lt;input type="datetime-local"&gt;</code>.
+                                </li>
+                                <li>Ensured an intuitive and accessible feedback submission experience.</li>
+                                <li>Allowed users to upload attachments and specify submission times.</li>
+                                <li>Organized inputs using proper HTML structures to enhance usability.</li>
+                                <li>Provided real-time feedback to users on incorrect inputs.</li>
+                            </ul>
+                        </li><br>
+                
+                        <li><strong>CSS:</strong>
+                            <ul>
+                                <li>Styled form elements using <code>display: flex</code>, margin, padding, and gap for spacing.</li>
+                                <li>Used <code>:hover</code> pseudo-classes for better user experience.</li>
+                                <li>Applied <code>border: 2px solid red</code> for invalid fields and displayed error messages.</li>
+                                <li>Ensured form responsiveness using @media queries</a>.</li>
+                                <li>Applied border, border-radius, and box-shadow for better visual appeal.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li><strong>Headings & Structure:</strong> Proper use of <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code> for a logical document flow.</li>
+                        <li><strong>Image Descriptions:</strong> All images include meaningful <code>alt</code> attributes.</li>
+                        <li><strong>Table of Contents:</strong> Clickable links allow easy navigation for screen readers.</li>
+                        <li><strong>Keyboard Support:</strong> Users can navigate through the page without a mouse.</li>
+                        <li><strong>ARIA Landmarks:</strong> <code>role="navigation"</code> and <code>role="main"</code> help assistive technologies.</li>
+                    </ul>
+                    
+                    <h3>Link to the validation page</h3>
+                    <p><a href="validation_ST3.html">Validation page</a></p>
+
+                    <h3>Link to the Content page</h3>
+                        <p><a href="content_ST3.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <h3>Challenges:</h3>
+                <ul>
+                    <li>Ensuring responsiveness across different devices.</li>
+                    <li>Managing large content sections without overwhelming the layout.</li>
+                    <li>Optimizing image placement for better UX.</li>
+                </ul>
+            
+                <h3>Lessons Learned:</h3>
+                <ul>
+                    <li>The importance of semantic HTML for accessibility.</li>
+                    <li>Effective use of CSS Grid and Flexbox for layout management.</li>
+                    <li>Implementing accessible navigation for better user experience.</li>
+                </ul> 
+            </section>
+
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                <p>The web pages created adhere to the JANET regulations governing web page publication, ensuring compliance with accessibility, security, and ethical content standards. The following key aspects were considered:</p>
+                
+                <ul>
+                    <li><strong>Accessibility Compliance:</strong> The pages follow WCAG 2.1 guidelines by using semantic HTML, ensuring sufficient color contrast, and providing alternative text for images to accommodate users with disabilities.</li>
+                    <li><strong>Content Integrity:</strong> All information provided is factually accurate and appropriately cited where necessary, avoiding misinformation or misleading content.</li>
+                    <li><strong>Security Considerations:</strong> Best practices such as avoiding inline JavaScript for security vulnerabilities and ensuring proper use of external links (with <code>target="_blank"</code> and <code>rel="noopener noreferrer"</code>) have been followed.</li>
+                    <li><strong>Privacy & Data Protection:</strong> No personal user data is collected or stored, ensuring compliance with GDPR principles.</li>
+                    <li><strong>Copyright & Attribution:</strong> Images and content sourced externally are properly attributed, following copyright regulations.</li>
+                </ul>
+            
+                <p>These measures ensure that the website aligns with ethical and legal web publishing standards while maintaining accessibility and usability for all users.</p>
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>               
+                    <ul class="ref">
+                        <li>W3Schools, 2025. <i>HTML Semantic Elements</i>. Available at: 
+                            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">https://www.w3schools.com/html/html5_semantic_elements.asp</a> 
+                            [Accessed 25 Feb. 2025].
+                        </li>
+                        <li>W3Schools, 2025. <i>CSS Grid Layout</i>. Available at: 
+                            <a href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a> 
+                            [Accessed 25 Feb. 2025].
+                        </li>
+
+                        <li>W3Schools, 2025. <i>HTML Forms</i>. Available at: 
+                            <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a> 
+                            [Accessed 27 Feb. 2025].
+                        </li>
+                        <li>W3Schools, 2025. <i>Form Validation</i>. Available at: 
+                            <a href="https://www.w3schools.com/js/js_validation.asp">https://www.w3schools.com/js/js_validation.asp</a> 
+                            [Accessed 27 Feb. 2025].
+                        </li>
+
+                        <li>W3Schools, 2025. <i>HTML Headings and Structure</i>. Available at: 
+                            <a href="https://www.w3schools.com/html/html_headings.asp">https://www.w3schools.com/html/html_headings.asp</a> 
+                            [Accessed 27 Feb. 2025].
+                        </li>
+                        <li>W3Schools, 2025. <i>HTML Links</i>. Available at: 
+                            <a href="https://www.w3schools.com/html/html_links.asp">https://www.w3schools.com/html/html_links.asp</a> 
+                            [Accessed 27 Feb. 2025].
+                        </li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#feedbackPage">Feedback page</a> </li>
+                        <li><a href="#teamPage">Team page</a></li>
+                        <li><a href="#contentPage">Content page</a></li>
+                    </ul>
+
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h2> Together, we make a <br>difference in saving our ocean!</h1>
+                </div>
+                <div class="cta-btn-section">
+                <div class="cta-btn-section">
+                        <button class="cta-btn" onclick="location.href = '#';">Join Us!</button>
+                </div>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="footer-info">
+                <div class="team-container">
+                    <img src="Assests/Logo/Square2.png" alt="team logo square">
+                    <!-- <div class="team-info"> -->
+                        <!-- <h3>Save</h3> <br> <h3>Marine</h3>  <br> <h3>Life</h3> </h3> -->
+                    <!-- </div> -->
+                </div>
+                <div class="links">
+                    <div class="navigation-links">
+                        <h3>Navigation</h3>
+                        <a href="home.html" class="footer-links"><p>Home</p> </a>
+                        <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                        <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                        <a href="volunteer.html" class="footer-links"><p>Volunteer</p> </a>
+                        <a href="team.html" class="footer-links"><p>Team</p> </a>
+                        <a href="table.html" class="footer-links"><p>Table</p> </a>
+                    </div>
+                    <div class="explore-links">
+                        <h3>Explore</h3>
+                        <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                        <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                        <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                        <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon facebook">
+                        <img src="Assests/Icons/fbDefault.png" alt="Facebook" class="default">
+                        <img src="Assests/Icons/fbActive.png" alt="Facebook" class="hover">
+                    </a>
+                    <a href="https://x.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon x">
+                        <img src="Assests/Icons/XDefault.png" alt="X" class="default">
+                        <img src="Assests/Icons/XActive.png" alt="X" class="hover">
+                    </a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" target="_blank" rel="noopener noreferrer" class="icon youtube">
+                        <img src="Assests/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                        <img src="Assests/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                    </a>
+                    <a href="https://www.flickr.com/photos/sustdev/" target="_blank" rel="noopener noreferrer" class="icon flickr">
+                        <img src="Assests/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                        <img src="Assests/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

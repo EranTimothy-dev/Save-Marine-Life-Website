@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Marine Life</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sitemap.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo/Circle.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fd1891ff8.js" crossorigin="anonymous"></script>
+    <script defer src="navbar.js"></script>
+</head>
+<body>
+<script>
+
+    document.addEventListener('scroll',()=>{
+        const header = document.querySelector("header");
+
+        if(window.scrollY >0){
+            header.classList.add("scrolled");
+
+        }else {
+            header.classList.remove("scrolled")
+        }
+    })
+</script>
+<nav class="navbar">
+    <div class="logo">
+        <img src="Assets/Logo/Circle2.png" alt="Save Marine Life">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <img src="Assets/Icons/menu.svg" alt="burger icon" id="menu-icon">
+    </div>
+    <div class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html" class="active">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+    </div>
+    <div class="profile">
+        <a href="profile.html"><img src="Assets/images/profileImage.jpg" alt="User Profile"></a>
+    </div>
+</nav>
+
+
+<main>
+<!--    <h1 class="heading">Site Map</h1>-->
+    <div class="sitemap">
+        <div class="sitemap-box">
+            <br><br><br>
+            <svg viewBox="0 0 1550 750" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                <!--Splash-screen node -->
+                <a href="splash.html">
+                    <g class="splashScreen">
+                        <title>Splash Screen</title>
+                        <rect x="650" y="107"  width="220" height="60" ></rect>
+                        <text x="758" y="144">Splash-screen</text>
+                    </g>
+                </a>
+<!-- Home page node-->
+                <a href="home.html">
+                <g class="home">
+                    <title>Home page</title>
+                    <rect x="650" y="210"  width="220" height="90" ></rect>
+                    <text  x="765" y="265">Home</text>
+                </g>
+                </a>
+                <a href="Content_ST1.html">
+                    <g class="content-pages">
+                        <title>Student 1 - content page</title>
+                        <rect x="190" y="125"  width="200" height="60" ></rect>
+                        <text x="290" y="159">Content page-Student 1</text>
+                    </g>
+                </a>
+                <a href="Content_ST2.html">
+                    <g class="content-pages">
+                        <title>Student 2 - content page</title>
+                        <rect x="1140" y="125"  width="200" height="60" ></rect>
+                        <text x="1237" y="159">Content page-Student 2</text>
+                    </g>
+                </a>
+
+                <a href="Content_ST3.html">
+                    <g class="content-pages">
+                        <title>Student 3 - content page</title>
+                        <rect x="190" y="225"  width="200" height="60" ></rect>
+                        <text x="290" y="259">Content page-Student 3</text>
+                    </g>
+                </a>
+
+
+                <a href="content_ST4.html">
+                    <g class="content-pages">
+                        <title>Student 4 - content page</title>
+                        <rect x="1140" y="225"  width="200" height="60" ></rect>
+                        <text x="1237" y="259">Content page-Student 4</text>
+                    </g>
+                </a>
+
+<!--Table Node-->
+                <a href="table.html">
+                <g class="table">
+                    <title>Table page</title>
+                    <rect x="50" y="370" width="180" height="80" ></rect>
+                    <text  x="135" y="420">Table</text>
+                </g>
+                </a>
+<!--Volunteer page node-->
+                <a href="volunteer.html">
+                <g class="volunteer">
+                    <title>Volunteer page</title>
+                    <rect x="300" y="370"  width="180" height="80" ></rect>
+                    <text x="385" y="420">Volunteer</text>
+                </g>
+                </a>
+ <!--  Feedback page node-->
+                <a href="feedback.html">
+                <g class="feedback">
+                    <title>Feedback page</title>
+                    <rect x="550" y="370"  width="180" height="80" > </rect>
+                    <text  x="635" y="420">Feedback</text>
+                </g>
+                </a>
+<!--Team page node -->
+                <a href="team.html">
+                <g class="team">
+                    <title>Team page</title>
+                    <rect x="800" y="370"  width="180" height="80" ></rect>
+                    <text x="885" y="420" >Team</text>
+                </g>
+                </a>
+<!-- User profile page node -->
+                <a href="profile.html">
+                <g class="userProfile">
+                    <title>User Profile page</title>
+                    <rect x="1050" y="370" width="180" height="80" ></rect>
+                    <text x="1140" y="420">User Profile</text>
+                </g>
+                </a>
+<!--Site-map  page node-->
+                <a href="sitemap.html">
+                <g class="siteMap">
+                    <title>Sitemap page</title>
+                    <rect x="1300" y="370" width="180" height="80"></rect>
+                    <text x="1385" y="420">Site-map</text>
+                </g>
+                </a>
+<!--Page editor nodes-->
+                <a href="pageEditor_ST1.html">
+                <g class="pageEditor">
+                    <title>Editor Page for student 1</title>
+                    <rect x="315" y="550"  width="200" height="60"></rect>
+                    <text   x="415" y="583">Page editor-Student 01</text>
+                </g>
+                </a>
+                <a href="validation_ST1.html">
+                    <g class="validation">
+                        <title>Validation page for student 1</title>
+                        <rect x="315" y="650" width="200" height="60"></rect>
+                        <text  x="415" y="683" >Validations</text>
+                    </g>
+                </a>
+                <a href="pageEditor_ST2.html">
+                <g class="pageEditor">
+                    <title>Editor Page for student 2</title>
+                    <rect x="565" y="550" fill="none" width="200" height="60" ></rect>
+                    <text x="665" y="583" >Page editor-Student 02</text>
+                </g>
+                </a>
+                <a href="validation_ST2.html">
+                    <g class="validation">
+                        <title>Validation page for student 2</title>
+                        <rect x="565" y="650"  width="200" height="60" ></rect>
+                        <text x="665" y="683">Validations</text>
+                    </g>
+                </a>
+                <a href="pageEditor_ST3.html">
+                <g class="pageEditor">
+                    <title>Editor Page for student 3</title>
+                    <rect x="815" y="550" fill="none" width="200" height="60" ></rect>
+                    <text x="915" y="583">Page editor-Student 03</text>
+                </g>
+                </a>
+                <a href="validation_ST3.html">
+                    <g class="validation">
+                        <title>Validation page for student 3</title>
+                        <rect x="815" y="650"  width="200" height="60" ></rect>
+                        <text x="915" y="683">Validations</text>
+                    </g>
+                </a>
+
+                <a href="pageEditor_ST4.html">
+                <g class="pageEditor">
+                    <title>Student 4 page</title>
+                    <rect x="1065" y="550" fill="none" width="200" height="60" ></rect>
+                    <text x="1165" y="583"  >Page editor-Student 04</text>
+                </g>
+                </a>
+
+                <a href="validation_ST4.html">
+                    <g class="validation">
+                        <title>Validation page for student 4</title>
+                        <rect x="1065" y="650" width="200" height="60" ></rect>
+                        <text  x="1165" y="683">Validations</text>
+                    </g>
+                </a>
+
+<!--Setting up the first branch -->
+                <g class="arrow1">
+                    <title>Arrow from splash-screen to home page</title>
+                    <line  x1="760" y1="166 " x2="760" y2="210"></line>
+                    <polyline points="750,200 760,210 770,200"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from home page to the first branch</title>
+                    <line  x1="760" y1="300" x2="760" y2="330"></line>
+                </g>
+                <g class="arrow2">
+                    <title>Left side of the first branch</title>
+                    <line  x1="760" y1="330" x2="140" y2="330"></line>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from first branch to table page</title>
+                    <line  x1="140" y1="330" x2="140" y2="370"></line>
+                    <polyline points="130,360 140,370 150,360"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from first branch to volunteer page</title>
+                    <line  x1="390" y1="330" x2="390" y2="370"></line>
+                    <polyline points="380,360 390,370 400,360"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from first branch to the feedback page</title>
+                    <line  x1="640" y1="330" x2="640" y2="370"></line>
+                    <polyline points="630,360 640,370 650,360"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Right side of the first branch</title>
+                    <line  x1="760" y1="330" x2="1390" y2="330"></line>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from first branch to the site-map page</title>
+                    <line  x1="1390" y1="330" x2="1390" y2="370"></line>
+                    <polyline points="1380,360 1390,370 1400,360"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from first branch to the user profile page</title>
+                    <line  x1="1140" y1="330" x2="1140" y2="370"></line>
+                    <polyline points="1130,360 1140,370 1150,360"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from first branch to the team page</title>
+                    <line  x1="890" y1="330" x2="890" y2="370"></line>
+                    <polyline points="880,360 890,370 900,360"></polyline>
+                </g>
+<!--Setting up the second branch -->
+                <g class="arrow2">
+                    <title>Arrow from first branch to the second branch</title>
+                    <line  x1="760" y1="330" x2="760" y2="480"></line>
+                </g>
+                <g class="arrow2">
+                    <title>Left side of the second branch</title>
+                    <line  x1="760" y1="480" x2="415" y2="480"></line>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from second branch to the page editor student 1</title>
+                    <line  x1="415" y1="480" x2="415" y2="550"></line>
+                    <polyline points="405,540 415,550 425,540"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from second branch to the page editor student 2</title>
+                    <line  x1="665" y1="480" x2="665" y2="550"></line>
+                    <polyline points="655,540 665,550 675,540"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Right side of the second branch</title>
+                    <line  x1="760" y1="480" x2="1165" y2="480"></line>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from second branch to the page editor student 4</title>
+                    <line  x1="1165" y1="480" x2="1165" y2="550"></line>
+                    <polyline points="1155,540 1165,550 1175,540"></polyline>
+                </g>
+                <g class="arrow2">
+                    <title>Arrow from second branch to the page editor student 3</title>
+                    <line  x1="915" y1="480" x2="915" y2="550"></line>
+                    <polyline points="905,540 915,550 925,540"></polyline>
+                </g>
+
+
+
+
+
+                <g class="arrow3">
+                    <title>Arrow from student 1 validation page to the validation page</title>
+                    <line  x1="415" y1="610" x2="415" y2="650"></line>
+                    <polyline points="405,640 415,650 425,640"></polyline>
+                </g>
+                <g class="arrow3">
+                    <title>Arrow from student 2 validation page to the validation page</title>
+                    <line  x1="665" y1="610" x2="665" y2="650"></line>
+                    <polyline points="655,640 665,650 675,640"></polyline>
+                </g>
+                <g class="arrow3">
+                    <title>Arrow from student 4 validation page to the validation page</title>
+                    <line  x1="1165" y1="610" x2="1165" y2="650"></line>
+                    <polyline points="1155,640 1165,650 1175,640"></polyline>
+                </g>
+                <g class="arrow3">
+                    <title>Arrow from student 3 validation page to the validation page</title>
+                    <line  x1="915" y1="610" x2="915" y2="650"></line>
+                    <polyline points="905,640 915,650 925,640"></polyline>
+                </g>
+
+<!--Setting branches for content pages-->
+                <g class="arrow4">
+                    <title>Arrow from home to student 4's content page</title>
+                    <line x1="870" y1="255" x2="1140" y2="255"></line>
+                    <polyline points="1130,245 1140,255 1130,265"></polyline>
+                </g>
+                <g class="arrow4">
+                    <title>Arrow from home to student 3's content page</title>
+                    <line x1="650" y1="255" x2="390" y2="255"></line>
+                    <polyline points="400,245 390,255 400,265"></polyline>
+                </g>
+                <g class="arrow4">
+                    <title>Branch that leads to student 1's profile page</title>
+                    <line x1="520" y1="255" x2="520" y2="155"></line>
+                </g>
+                <g class="arrow4">
+                    <title>Branch that leads to student 2's profile page</title>
+                    <line x1="1005" y1="255" x2="1005" y2="155"></line>
+                </g>
+                <g class="arrow4">
+                    <title>Arrow from branch to student 1's content page</title>
+                    <line x1="520" y1="155" x2="390" y2="155"></line>
+                    <polyline points="400,145 390,155 400,165"></polyline>
+                </g>
+                <g class="arrow4">
+                    <title>Arrow from branch to student 2's content page</title>
+                    <line x1="1005" y1="155" x2="1140" y2="155"></line>
+                    <polyline points="1130,145 1140,155 1130,165"></polyline>
+                </g>
+
+
+
+
+            </svg>
+        </div>
+    </div>
+
+
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="cta-section">
+            <div class="cta-text">
+                <h2> Together, we make a <br>difference in saving our ocean!</h2>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="footer-info">
+            <div class="team-container">
+                <img src="Assets/Logo/Square2.png" alt="team logo square">
+            </div>
+            <div class="links">
+                <div class="navigation-links">
+                    <h3>Navigation</h3>
+                    <a href="home.html" class="footer-links"><p>Home</p> </a>
+                    <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                    <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                    <a href="team.html" class="footer-links"><p>Team</p> </a>
+                </div>
+                <div class="explore-links">
+                    <h3>Explore</h3>
+                    <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                    <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                    <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                    <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#" class="icon facebook">
+                    <img src="Assets/Icons/fbDefault.png" alt="Facebook" class="default">
+                    <img src="Assets/Icons/fbActive.png" alt="Facebook" class="hover">
+                </a>
+                <a href="#" class="icon x">
+                    <img src="Assets/Icons/XDefault.png" alt="X" class="default">
+                    <img src="Assets/Icons/XActive.png" alt="X" class="hover">
+                </a>
+                <a href="#" class="icon youtube">
+                    <img src="Assets/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                    <img src="Assets/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                </a>
+                <a href="#" class="icon flickr">
+                    <img src="Assets/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                    <img src="Assets/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                </a>
+            </div>
+            <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
