@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Marine Life</title>
+    <link rel="stylesheet" href="stylesFeedback.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Assests/Logo/Circle.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="navbar.js"></script>
+    <style>
+        footer{
+            margin-top: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> 
+            <img src="Assests/Logo/Circle2.png" alt="Save Marine Life"> 
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="Assests/Icons/menu.svg" alt="burger icon" id="menu-icon">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#" class="active">Feedback</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#">Table</a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <a href="profile.html"><img src="Assests/images/profileimage.jpg" alt="User Profile"></a>
+        </div>
+    </nav>
+
+    <main class="feedback-contanier">
+        <section class = "hero">
+            <!-- <img src="Assests/HeroSectionBg.png" alt="Water Background"> -->
+             <h2>Share Your Feedback</h2>
+            <p>Your feedback helps us improve our efforts in marine conservation and
+               enchance your experience on our website. We'd love to heard from you!
+            </p>
+        </section>
+        <div class="content">
+            <h2><span>User</span> Feedback</h2>
+            <form> 
+                <div class="personal-details">
+                    <fieldset>
+                        <legend>Personal Details :</legend>
+                        <hr>
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" maxlength="100" required title="Please enter a your name"><br>
+                        
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required title="Please enter a valid email address"><br>
+
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" maxlength="200" placeholder="Enter your address" >
+
+                        <div class="inline-content">
+                            <div>
+                                <label for="phone">Telephone No. <span>*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+94 77 123 4567" pattern="[0-9+ ]{10,15}" required title="Please enter a telephone no.">
+                            </div>
+                            <div>
+                                <label for="country">Country <span>*</span></label>
+                                <select id="country" name="country" required>
+                                    <option value="">Country</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="SriLanka">SriLanka</option>
+                                    <option value="India">India</option>
+                                    <option value="Japan">Japan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <br><br>
+
+                <div class="feedback-details">
+                    <fieldset>
+                        <legend>Feedback Details :</legend>
+                        <hr>
+                        <label for="category">What is your Feedback about?</label>
+                        <select id="category" name="category">
+                            <option value="">Category</option>
+                            <option value="1">Website Experience</option>
+                            <option value="2">Volunteer Events</option>
+                            <option value="3">Marine Conservation</option>
+                            <option value="4">Other</option>
+                        </select><br>
+                        
+                        <label for="topics-intrested">Which topics intrest you the most?</label>
+                        <input type="text" id="topics-intrested" name="topics-intrested"><br>
+
+                        <label for="comments">Please provide your feedback or comments:</label>
+                        <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Write your comment here..."></textarea>
+                    </fieldset>
+                </div>
+
+                <br><br>
+
+                <div class="additional-feedback">
+                    <fieldset>
+                        <legend>Additional Feedback and Suggestions :</legend>
+                        <hr>
+                        <label>How easy was it to navigate our website?</label>
+                        <div class="radio-grp">
+                            <input type="radio" id="veryEasy" name="rating" value="veryEasy">
+                            <label for="veryEasy">Very Easy</label><br>
+
+                            <input type="radio" id="easy" name="rating" value="easy">
+                            <label for="easy">Somewhat Easy</label><br>
+                            
+                            <input type="radio" id="neutral" name="rating" value="neutral">
+                            <label for="neutral">Neutral</label><br>
+
+                            <input type="radio" id="difficult" name="rating" value="difficult">
+                            <label for="difficult">Somewhat Difficult</label><br>
+
+                            <input type="radio" id="veryDifficult" name="rating" value="veryDifficult">
+                            <label for="veryDifficult">Very Difficult</label>
+                        </div>
+                            
+                        <label>Did you encounter any issues while using the website?</label>
+                        <div class="checkbox-grp">  
+                            <input type="checkbox" id="slow" name="issues" value="slow">
+                            <label for="slow">Slow loading time</label><br>
+
+                            <input type="checkbox" id="broken" name="issues" value="easy">
+                            <label for="broken">Broken links/pages</label><br>
+                            
+                            <input type="checkbox" id="difficultNavigation" name="issues" value="neutral">
+                            <label for="difficultNavigation">Difficult navigation</label><br>
+
+                            <input type="checkbox" id="other" name="issues" value="difficult">
+                            <label for="other">Other (Please specify)</label><br>
+                            <input type="text" placeholder="Other">
+                        </div>
+                        
+                        <label for="date">When did you experience this issue?</label>
+                        <input type="datetime-local" id="date" name="date" value="2025-03-05T10:30"><br>
+
+                        <label for="feedback">Please provide your feedback or comments:</label>
+                        <textarea id="feedback" name="feedback" rows="6" maxlength="1000" placeholder="Write your comment here..."></textarea><br>
+
+                        <label for="file">📎Upload a file:</label>
+                        <input type="file" id="file" name="file" accept=".pdf,.png,.jpg" aria-labelledby="file" aria-describedby="file-instructions" class="file-upload">
+                        <p id="file-instructions">Accepted formats: PDF, PNG, JPG.</p>
+                        
+                        <label>Rate your experience:</label>
+                        <div>                       
+                            <span class="emoji-rating">&#128525;</span>
+                            <span class="emoji-rating">&#128522;</span>                      
+                            <span class="emoji-rating">&#128528;</span>
+                            <span class="emoji-rating">&#128533;</span>
+                            <span class="emoji-rating">&#128545;</span>
+                        </div>
+                    </fieldset>
+                </div>
+                
+
+                <button type="submit">Submit</button>
+                <button type="reset" class="clear">Clear</button>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h2> Together, we make a <br>difference in saving our ocean!</h2>
+                </div>
+                <div class="cta-btn-section">
+                    <button class="cta-btn" onclick="location.href = '#';">Join Us!</button>
+            </div>
+            </div>
+        
+            <hr>
+            <div class="footer-info">
+                <div class="team-container">
+                    <img src="Assests/Logo/Square2.png" alt="team logo square">
+                    <!-- <div class="team-info"> -->
+                        <!-- <h3>Save</h3> <br> <h3>Marine</h3>  <br> <h3>Life</h3> </h3> -->
+                    <!-- </div> -->
+                </div>
+                <div class="links">
+                    <div class="navigation-links">
+                        <h3>Navigation</h3>
+                        <a href="home.html" class="footer-links"><p>Home</p> </a>
+                        <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                        <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                        <a href="volunteer.html" class="footer-links"><p>Volunteer</p> </a>
+                        <a href="team.html" class="footer-links"><p>Team</p> </a>
+                        <a href="table.html" class="footer-links"><p>Table</p> </a>
+                    </div>
+                    <div class="explore-links">
+                        <h3>Explore</h3>
+                        <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                        <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                        <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                        <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon facebook">
+                        <img src="Assests/Icons/fbDefault.png" alt="Facebook" class="default">
+                        <img src="Assests/Icons/fbActive.png" alt="Facebook" class="hover">
+                    </a>
+                    <a href="https://x.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon x">
+                        <img src="Assests/Icons/XDefault.png" alt="X" class="default">
+                        <img src="Assests/Icons/XActive.png" alt="X" class="hover">
+                    </a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" target="_blank" rel="noopener noreferrer" class="icon youtube">
+                        <img src="Assests/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                        <img src="Assests/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                    </a>
+                    <a href="https://www.flickr.com/photos/sustdev/" target="_blank" rel="noopener noreferrer" class="icon flickr">
+                        <img src="Assests/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                        <img src="Assests/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

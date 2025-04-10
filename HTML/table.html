@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Marine Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="icon" type="image/x-icon" href="Assests/Logo/Circle.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="navbar.js"></script>
+    <style>
+        .container {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> 
+            <img src="Assests/Logo/Circle2.png" alt="Save Marine Life"> 
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="Assests/Icons/menu.svg" alt="burger icon" id="menu-icon">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html" class="active">Table</a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <a href="profile.html"><img src="Assests/images/profileimage.jpg" alt="User Profile"></a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class = "hero">
+            <h1>The Efforts Taken to Save Our Oceans</h1>
+            <!-- <p>Join us in raising awareness, taking action, and <br> ensuring that the wonders beneath the waves thrive for generations to come.</p> -->
+            <div class="scroll-down">
+                <span><a href="#content" class="btn"><i class="fa-solid fa-circle-arrow-down fa-2xl" id="btn"></i></a></span> <!-- Placeholder for the icon -->
+            </div>
+        </section>
+        <div class="content">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="heading">
+                                <img src="Assests/Logo/Circle.png" alt="Life Below Water Logo" class="table-logo">
+                                Marine Conservation Efforts &#127754;
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Conservation Effort</th>
+                            <th>Impact &#127793;</th>
+                            <th>Support &#127942;</th>
+                            <th>More Info &#128279;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">
+                                Coral Reef Restoration
+                            </td>
+                            <td>Protects marine species & enhances ocean biodiversity</td>
+                            <td>&#10004; Government Programs<br>✔ NGOs</td>
+                            <td rowspan="2"><a href="https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs" target="_blank" rel="noopener noreferrer">Read More</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Helps maintain ocean ecosystems and combat climate change.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sea Turtle Protection
+                            </td>
+                            <td>Reduces extinction risks & maintains healthy oceans</td>
+                            <td>&#10004; Conservation Groups</td>
+                            <td><a href="https://www.fisheries.noaa.gov/national/international-affairs/international-sea-turtle-conservation" target="_blank" rel="noopener noreferrer">Learn More</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ocean Cleanup Initiatives
+                            </td>
+                            <td>Removes harmful plastic & reduces pollution</td>
+                            <td>&#10004; Volunteers<br>✔ Organizations</td>
+                            <td><a href="Volunteer.html">Get Involved</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Overfishing Regulations
+                            </td>
+                            <td>Preserves marine food chains & prevents fish depletion</td>
+                            <td>&#10004; Legal Regulations</td>
+                            <td><a href="https://www.fisheries.noaa.gov/topic/laws-policies" target="_blank" rel="noopener noreferrer">Read More</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Marine Protected Areas
+                            </td>
+                            <td>Provides safe habitats for marine species</td>
+                            <td>&#10004; Environmental Policies</td>
+                            <td><a href="https://oceanexplorer.noaa.gov/facts/mpas.html#:~:text=A%20marine%20protected%20area%20is,ecosystems%20services%2C%20or%20cultural%20heritage." target="_blank" rel="noopener noreferrer">Discover More</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h2> Together, we make a <br>difference in saving our ocean!</h2>
+                </div>
+                <div class="cta-btn-section">
+                        <button class="cta-btn" onclick="location.href = 'volunteer.html';">Join Us!</button>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="footer-info">
+                <div class="team-container">
+                    <img src="Assests/Logo/Square2.png" alt="team logo square">
+                </div>
+                <div class="links">
+                    <div class="navigation-links">
+                        <h3>Navigation</h3>
+                        <a href="home.html" class="footer-links"><p>Home</p> </a>
+                        <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                        <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                        <a href="volunteer.html" class="footer-links"><p>Volunteer</p> </a>
+                        <a href="team.html" class="footer-links"><p>Team</p> </a>
+                        <a href="table.html" class="footer-links"><p>Table</p> </a>
+                    </div>
+                    <div class="explore-links">
+                        <h3>Explore</h3>
+                        <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                        <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                        <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                        <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon facebook">
+                        <img src="Assests/Icons/fbDefault.png" alt="Facebook" class="default">
+                        <img src="Assests/Icons/fbActive.png" alt="Facebook" class="hover">
+                    </a>
+                    <a href="https://x.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon x">
+                        <img src="Assests/Icons/XDefault.png" alt="X" class="default">
+                        <img src="Assests/Icons/XActive.png" alt="X" class="hover">
+                    </a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" target="_blank" rel="noopener noreferrer" class="icon youtube">
+                        <img src="Assests/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                        <img src="Assests/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                    </a>
+                    <a href="https://www.flickr.com/photos/sustdev/" target="_blank" rel="noopener noreferrer" class="icon flickr">
+                        <img src="Assests/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                        <img src="Assests/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

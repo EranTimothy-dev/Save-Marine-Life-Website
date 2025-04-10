@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - provide your student name</title>
+    <link rel="icon" type="image/x-icon" href="Assests/Logo/Circle.ico">
+    <link rel="stylesheet" href="pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="navbar.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> 
+            <img src="Assests/Logo/Circle2.png" alt="Save Marine Life"> 
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <img src="Assests/Icons/menu.svg" alt="burger icon" id="menu-icon">
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </div>
+        <div class="profile">
+            <a href="profile.html"><img src="Assests/images/profileimage.jpg" alt="User Profile"></a>
+        </div>
+    </nav>
+
+    <section class="stud">
+        <h2>Eran Timothy Perera, Student 2</h2>
+    </section>
+
+    <div class="val-container">
+        <!-- Main content area -->
+        <main>
+
+            <section>
+                <h2 id="home">Home Page</h2>
+                
+                <h3>Technical Description</h3>
+                <p>The Home page consists of three main sections: the navbar, the main content section, and the footer. The navbar ensures easy navigation across different pages and follows a global CSS styling with JavaScript for responsiveness on mobile devices.</p>
+                <p>The main content section is divided into multiple subsections:</p>
+                <ul>
+                    <li><strong>Hero Section:</strong> Displays a visually appealing background image, a prominent heading, and a call-to-action scroll-down button.</li>
+                    <li><strong>Mission Section:</strong> Contains an image and a text description highlighting the purpose of the initiative.</li>
+                    <li><strong>Help Section:</strong> Provides ways users can contribute, using icons and brief descriptions.</li>
+                    <li><strong>Explore Section:</strong> Offers further reading with links to detailed content pages.</li>
+                </ul>
+                <p>The styles for the main content section are defined in a separate CSS file, <code>homepage.css</code>, which includes styling for the hero section, mission container, help section, and explore section.</p>
+            
+                <h3>Accessibility</h3>
+                <p>Accessibility considerations include:</p>
+                <ul>
+                    <li>Using semantic HTML elements (e.g., <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) for better screen reader support.</li>
+                    <li>Ensuring text contrast with background colors for readability.</li>
+                    <li>Providing alt attributes for all images to aid visually impaired users.</li>
+                </ul>
+            
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validation_ST2.html#homeVal">Home validation page</a></p>
+            
+                <h3>Link to the Page</h3>
+                <p><a href="home.html">home.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="table">Table Page</h2>
+                
+                <h3>Technical Description</h3>
+                <p>The Table Page presents marine conservation efforts in a structured tabular format, enhancing readability and accessibility. The page follows a clean and responsive design using HTML and CSS.</p>
+                <p>Key HTML elements used:</p>
+                <ul>
+                    <li><code>&lt;table&gt;</code> - Organizes data into rows and columns for clear presentation.</li>
+                    <li><code>&lt;thead&gt;</code> & <code>&lt;tbody&gt;</code> - Separates table headers from content, improving structure.</li>
+                    <li><code>&lt;th&gt;</code> - Defines header cells with bold text for better clarity.</li>
+                    <li><code>&lt;td&gt;</code> - Holds data within the table, allowing row and column-based styling.</li>
+                    <li><code>&lt;a&gt;</code> - Provides external links for additional resources.</li>
+                </ul>
+                <p>Key CSS properties used:</p>
+                <ul>
+                    <li><code>border-collapse: collapse;</code> - Removes extra spacing between table borders for a cleaner look.</li>
+                    <li><code>box-shadow</code> - Adds depth to the table, making it visually distinct.</li>
+                    <li><code>nth-child</code> selectors - Alternates row colors to improve readability.</li>
+                    <li><code>hover effects</code> - Enhances user experience by highlighting rows when hovered over.</li>
+                    <li><code>media queries</code> - Ensures the table adapts well to different screen sizes.</li>
+                </ul>
+            
+                <h3>Accessibility</h3>
+                <p>Accessibility features include:</p>
+                <ul>
+                    <li>Use of <code>th</code> elements for headers to provide context for screen readers.</li>
+                    <li>Contrast between text and background for better readability.</li>
+                    <li>Responsive design ensures the table remains navigable on mobile devices.</li>
+                    <li>Clickable links for external resources are clearly labeled.</li>
+                </ul>
+            
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validation_ST2.html#tableVal">Table validation page</a></p>
+            
+                <h3>Link to the Page</h3>
+                <p><a href="table.html">table.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+            
+                <h3>Technical Description</h3>
+                <p>The Content Page is structured using HTML and styled with a combination of a dedicated CSS file and a global stylesheet for consistency across the website. The page contains a hero section, content sections, and an interactive explore section.</p>
+                
+                <p>Key HTML elements used:</p>
+                <ul>
+                    <li><code>&lt;section&gt;</code> - Organizes content into meaningful sections for better readability and accessibility.</li>
+                    <li><code>&lt;div&gt;</code> - Used to create containers for different sections like mission, help, and explore.</li>
+                    <li><code>&lt;h1&gt;</code> & <code>&lt;h2&gt;</code> - Defines hierarchical headings to structure content properly.</li>
+                    <li><code>&lt;a&gt;</code> - Provides navigation links to other pages.</li>
+                    <li><code>&lt;img&gt;</code> - Displays visual content such as mission-related images and icons.</li>
+                </ul>
+            
+                <p>Key CSS properties used:</p>
+                <ul>
+                    <li><code>background-image</code> - Sets a gradient overlay with an image for a visually appealing hero section.</li>
+                    <li><code>flexbox</code> - Aligns sections horizontally and vertically for responsive design.</li>
+                    <li><code>hover effects</code> - Enhances interactivity by applying color changes and scaling images on hover.</li>
+                    <li><code>media queries</code> - Ensures the page layout adapts to different screen sizes.</li>
+                    <li><code>box-shadow</code> - Adds depth and distinction to sections, improving readability.</li>
+                </ul>
+            
+                <h3>Accessibility</h3>
+                <p>Accessibility considerations include:</p>
+                <ul>
+                    <li>Proper semantic HTML elements to improve screen reader compatibility.</li>
+                    <li>Alternative text (<code>alt</code>) for all images, ensuring information is accessible to visually impaired users.</li>
+                    <li>Contrast between text and background for readability.</li>
+                    <li>Keyboard-navigable buttons and links for users relying on keyboard interactions.</li>
+                </ul>
+            
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validation_ST2.html#contentVal">Content validation page</a></p>
+            
+                <h3>Link to the Page</h3>
+                <p><a href="content_ST2.html">content_ST2.html</a></p>
+            </section>
+
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                <p>The web pages created adhere to the JANET regulations governing web page publication, ensuring compliance with accessibility, security, and ethical content standards. The following key aspects were considered:</p>
+                
+                <ul>
+                    <li><strong>Accessibility Compliance:</strong> The pages follow WCAG 2.1 guidelines by using semantic HTML, ensuring sufficient color contrast, and providing alternative text for images to accommodate users with disabilities.</li>
+                    <li><strong>Content Integrity:</strong> All information provided is factually accurate and appropriately cited where necessary, avoiding misinformation or misleading content.</li>
+                    <li><strong>Security Considerations:</strong> Best practices such as avoiding inline JavaScript for security vulnerabilities and ensuring proper use of external links (with <code>target="_blank"</code> and <code>rel="noopener noreferrer"</code>) have been followed.</li>
+                    <li><strong>Privacy & Data Protection:</strong> No personal user data is collected or stored, ensuring compliance with GDPR principles.</li>
+                    <li><strong>Copyright & Attribution:</strong> Images and content sourced externally are properly attributed, following copyright regulations.</li>
+                </ul>
+            
+                <p>These measures ensure that the website aligns with ethical and legal web publishing standards while maintaining accessibility and usability for all users.</p>
+            </section>
+            
+            <section>
+                <h2 id="ref">References</h2>
+                <p>The following resources were used in the development of this website, following a consistent referencing style:</p>
+            
+                <ul class="ref">
+                    <li>World Wide Web Consortium (W3C) (2024) <i>Web Content Accessibility Guidelines (WCAG) 2.1.</i> Available at: 
+                        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">https://www.w3.org/WAI/standards-guidelines/wcag/</a> 
+                        (Last accessed: 10 Mar 2025).
+                    </li>
+                    <li>MDN Web Docs (2025) <i>Mozilla Developer Network - HTML & CSS.</i> Available at: 
+                        <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/</a> 
+                        (Last accessed: 10 Mar 2025).
+                    </li>
+                </ul>
+            </section>
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#">Splash page</a></li>
+                        <li><a href="#">Volunteer page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="pageEditor_ST2.html#home">Home page </a></li>
+                        <li><a href="pageEditor_ST2.html#table">Table page</a></li>
+                        <li><a href="pageEditor_ST2.html#content">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h2> Together, we make a <br>difference in saving our ocean!</h1>
+                </div>
+                <div class="cta-btn-section">
+                <div class="cta-btn-section">
+                        <button class="cta-btn" onclick="location.href = '#';">Join Us!</button>
+                </div>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="footer-info">
+                <div class="team-container">
+                    <img src="Assests/Logo/Square2.png" alt="team logo square">
+                </div>
+                <div class="links">
+                    <div class="navigation-links">
+                        <h3>Navigation</h3>
+                        <a href="home.html" class="footer-links"><p>Home</p> </a>
+                        <a href="feedback.html" class="footer-links"><p>Feedback</p> </a>
+                        <a href="sitemap.html" class="footer-links"><p>Sitemap</p> </a>
+                        <a href="volunteer.html" class="footer-links"><p>Volunteer</p> </a>
+                        <a href="team.html" class="footer-links"><p>Team</p> </a>
+                        <a href="table.html" class="footer-links"><p>Table</p> </a>
+                    </div>
+                    <div class="explore-links">
+                        <h3>Explore</h3>
+                        <a href="pageEditor_ST1.html" class="footer-links"><p>Page Editor - Student 1</p></a>
+                        <a href="pageEditor_ST2.html" class="footer-links"><p>Page Editor - Student 2</p></a>
+                        <a href="pageEditor_ST3.html" class="footer-links"><p>Page Editor - Student 3</p></a>
+                        <a href="pageEditor_ST4.html" class="footer-links"><p>Page Editor - Student 4</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon facebook">
+                        <img src="Assests/Icons/fbDefault.png" alt="Facebook" class="default">
+                        <img src="Assests/Icons/fbActive.png" alt="Facebook" class="hover">
+                    </a>
+                    <a href="https://x.com/SustDev" target="_blank" rel="noopener noreferrer" class="icon x">
+                        <img src="Assests/Icons/XDefault.png" alt="X" class="default">
+                        <img src="Assests/Icons/XActive.png" alt="X" class="hover">
+                    </a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" target="_blank" rel="noopener noreferrer" class="icon youtube">
+                        <img src="Assests/Icons/YouTubeDefault.png" alt="YouTube" class="default">
+                        <img src="Assests/Icons/YouTubeActive.png" alt="YouTube" class="hover">
+                    </a>
+                    <a href="https://www.flickr.com/photos/sustdev/" target="_blank" rel="noopener noreferrer" class="icon flickr">
+                        <img src="Assests/Icons/FlickrDefault.png" alt="Flickr" class="default">
+                        <img src="Assests/Icons/FlickrActive.png" alt="Flickr" class="hover">
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2023 Save Marine Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
