@@ -8,9 +8,9 @@ function toggleMenu() {
     profile.classList.toggle('active');
 
     if (menu.classList.contains('active')){
-        menuIcon.src = "Assests/Icons/close.svg";
+        menuIcon.src = "../w2119977/Assests/Icons/close.svg";
     } else {
-        menuIcon.src = "Assests/Icons/menu.svg";
+        menuIcon.src = "../w2119979/Assests/Icons/menu.svg";
     }
 }
 
