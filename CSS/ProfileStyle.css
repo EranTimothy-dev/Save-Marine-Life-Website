@@ -359,7 +359,7 @@ li ::marker {
     height: 100px;
     padding: 20px;
     color: #fff;
-    background: #262626 url("../Assets/images/coral.jpg") no-repeat center / cover;
+    background: #262626 url("../W2119711/Assets/images/coral.jpg") no-repeat center / cover;
     box-sizing: border-box;
 
 
@@ -522,7 +522,7 @@ textarea {
     font-size: 18px;
     border: none;
     outline: none;
-    background: url("../Assets/images/topBtn.png") no-repeat center / cover;
+    background: url("../W2119711/Assets/images/topBtn.png") no-repeat center / cover;
     width: 50px; /* Set a width for the image */
     height: 50px;
 
